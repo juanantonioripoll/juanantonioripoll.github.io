@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan A. Ripoll - IT Professional & Full Stack Developer</title>
+    <link href="assets/img/favicon.png" rel="shortcut icon" />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://github.com/juanantonioripoll/resources/blob/main/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://www.juanantonioripoll.es/dist/css/adminlte.min.css">
+    <!--sweetalert-->
+    <link rel="stylesheet"
+        href="https://www.juanantonioripoll.es/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+   
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://www.juanantonioripoll.es",
+      "logo": "https://www.juanantonioripoll.es/assets/image/logo.png"
+    }
+    </script>
+
+    <meta property="og:image"
+        content="https://www.juanantonioripoll.es/c-sharp-programming-course/assets/img/logo_redondo.png" />
+    <style>
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            color: darkorange;
+            transition: color .5s;
+        }
+    </style>
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+                        <i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item ">
+                    <a title="C# Programming Course" href="https://c-sharp-programming-course.github.io/" class="nav-link">Home</a>
+                </li>
+
+            </ul>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-orange" role="button"
+                        href="https://en.juanantonioripoll.es/java-programming-course/" title="Java Programming Course"
+                        target="_blank">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-orange" role="button"
+                        href="https://en.juanantonioripoll.es/visual-basic-programming-course/"
+                        title="Visual Basic (VB.net) Programming Course" target="_blank">VB.Net</a>
+
+                </li>
+                <li class="nav-item">
+                    <a id="btnFlagEspaña" runat="server" class="nav-link" role="button"
+                        href="https://www.juanantonioripoll.es" title="Spanish Version">
+                        <img alt="Juan A. Ripoll - Español" src="assets/img/FlagEspaña.png"
+                            style="width: 35px; border-radius: 3px 3px 3px;" /></a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="https://juanantonioripoll.github.io/" class="brand-link">
+                <img id="imagelogo" runat="server" src="assets/img/logo_trans.png" alt="Juan A. Ripoll"
+                    class="brand-image">
+                <span class="brand-text">Juan A. Ripoll</span>
+            </a>
+            <section class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="true">
+                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p style="font-size: 0.9em;">
+                                    C# Programming Course
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="lesson-1-first-contact-with-c-sharp.html"
+                                        title="Lesson 1 - First contact with C# Sharp - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;First contact with C# Sharp</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-2-flow-control.html"
+                                        title="Lesson 2 - Flow Control - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Flow Control</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-3-basic-data-types.html"
+                                        title="Lesson 3 - Basic Data Types - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Basic Data Types</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-4-arrays-structures-and-strings.html"
+                                        title="Lesson 4 - Arrays, Structures and Strings - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Arrays, Structures and Strings</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-5-functions.html"
+                                        title="Lesson 5 - Functions - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Functions</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-6-oop-object-oriented-programming.html"
+                                        title="Lesson 6 - OOP Object Oriented Programming - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;OOP Object Oriented Programming</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-7-oop-more-on-classes.html"
+                                        title="Lesson 7 - OOP More On Classes - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;OOP More On Classes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-8-file-management.html"
+                                        title="Lesson 8 - File Management - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;File Management</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-9-object-persistence.html"
+                                        title="Lesson 9 - Object Persistence - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Object Persistence</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-10-access-to-relational-databases.html"
+                                        title="Lesson 10 - Access To Relational Databases - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Access To Relational Databases</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-11-dynamic-memory-management.html"
+                                        title="Lesson 11 - Dynamic Memory Management - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Dynamic Memory Management</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="lesson-12-additional-libraries.html"
+                                        title="Lesson 12 - Additional Libraries - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Additional Libraries</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>                        
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p style="font-size: 0.9em;">
+                                    Programming Levels
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="c-sharp-exercises-for-beginners.html"
+                                        title="C# Exercises For Beginners - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;C# Exercises For Beginners </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="c-sharp-exercises-for-intermediates.html"
+                                        title="C# Exercises For Intermediates - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;C# Exercises For Intermediates </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="c-sharp-exercises-for-advanced.html"
+                                        title="C# Exercises For Advanced - C# Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;C# Exercises For Advanced</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <p style="font-size: 0.9em;">
+                                    Programming languages
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="https://java-programming-course.github.io/"
+                                        title="Java Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Java Course </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="visual-basic-programming-course.github.io/"
+                                        title="Visual Basic (VB.net) Programming Course" class="nav-link">
+                                        <p style="font-size: 0.8em;"><i class="fas fa-plus"
+                                                style="font-size: 0.9em;"></i>&nbsp;Visual Basic Course</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="p-3" style="border: none;">
+                    <h1>C# Programming Course</h1>
+                    <p>
+                        <b>C#</b> <b>Programming Course</b> <b>224 </b>
+                        <b>C#</b> Exercises with de solution.
+                        In this <b>C#</b> <b>programming course</b>
+                        you will learn to program in one of the most used <b>programming languages</b> in the world,
+                        <b>C#.</b>
+                    </p>
+                    <ul>
+                        <li><b>12 <b>C# </b>Lessons</b> with their exercises.</li>
+                        <li><b>224 <b>C#</b> Exercises</b> with the solution.</li>
+                        <li><b>224</b> Very useful <b>C#</b> <b>Sample Codes</b></li>
+                        <li>Completely <b>Free</b> and <b>without registration</b></li>
+                        <li>Suitable for <b>beginners</b> and <b>advanced.</b> Suitable <b>for everyone</b></li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="content">
+                <div class=" card card-body ">
+                    <!--What is C#-->
+                    <div class="p-3">
+                        <h2 class="h2" title="What is C#">🤔 What is <b>C#?</b></h2>
+
+                        <p>
+                            <b>"C#"</b> (pronounced cii sharp in English) is a multi-paradigm <b>programming
+                                language</b> developed and standardized
+                            by <a href="https://microsoft.com/" target="_blank" title="Microsoft"
+                                rel="nofollow">Microsoft</a> as part of its <a
+                                href="https://dotnet.microsoft.com/es-es/learn/dotnet/what-is-dotnet" target="_blank"
+                                rel="nofollow">.NET</a>
+                            platform, which was later approved as a standard by ECMA (ECMA-334)
+                            and ISO (ISO /IEC 23270). <b>C#</b> is one of the programming languages designed for the
+                            common language infrastructure.
+                            <br />
+                            The name <b>C#</b> was inspired by the sign <b>signo ♯</b>,
+                            which is read as <b>sharp</b> in English for musical notation. I
+                            t is a play on words, since <b>"C#"</b> means, musically speaking, where the symbol
+                            <b>símbolo #</b>
+                            indicates that a note (in this case <b>C</b>, represented by <b>C</b>)
+                            must be a semitone higher. This is a metaphor for the superiority
+                            of <b>C#</b> over its predecessor <b>C++</b> and in turn alludes to the same
+                            metaphor that was devised to give <b>C++</b> its name.
+                            In addition, the <b># symbol</b> can be imagined as the union of <b>four + symbols</b>,
+                            thus continuing the sense of progression of <b>C</b> languages.
+                            You can find more information on <a
+                                href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank"
+                                rel="nofollow">Wikipedia</a>
+                        </p>
+                    </div>
+                    <hr />
+                    <!--Ranking-->
+                    <div class="p-3">
+                        <h2 class="h2" title="Popularity ranking for C# programming language">🎖️ Popularity Ranking for
+                            <b>C#</b> <b>Programming Language</b></h2>
+
+                        <p>
+                            According to <a title="TIOBE" href="https://www.tiobe.com/tiobe-index/" target="_blank"
+                                rel="nofollow">TIOBE</a>, a company
+                            that is in charge of measuring the popularity of <b>programming languages</b>, the
+                            <b>C#.</b>
+                            <b>programming language</b> holds the <b>FIFTH position.</b> In other words, <b>C#.</b>
+                            is the <b>fifth most widely used programming language</b> in the world today.
+                        </p>
+                        <h4 title="Ranking of programming languages" class="h4"><b>Ranking</b> as of March 2023</h4>
+                        <ul>
+                            <li>1.- Phyton</li>
+                            <li>2.- C</li>
+                            <li>3.- <a title="Java Programming Course"
+                                    href="https://www.juanantonioripoll.es/java-programming-course/"
+                                    target="_blank">Java</a></li>
+                            <li>4.- C++</li>
+                            <li><b>5.- C#</b></li>
+                            <li>6.- <a title="Visual Basic (VB.Net) Programming Course"
+                                    href="https://www.juanantonioripoll.es/visual-basic-programming-course/"
+                                    target="_blank">Visual Basic</a></li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div class="p-3">
+                        <!--Qué puedo aprender-->
+                        <h2 class="h2" title="What can I learn from this C# programming course?">🧑‍🏫 What can I learn
+                            from this <b>C#</b> <b>Programming Course?</b></h2>
+
+
+                        <p>
+                            This <b>FREE</b> <b>C#</b> <b>programming course!</b>
+                            It covers all the aspects necessary for <b>programming</b> in <b>C#</b>
+                            up to the present. You will learn in an easy and fast way all the functionalities
+                            of this highly acclaimed <b>programming language</b> that is <b>C#</b>.
+                            <br />
+                            <br />
+                            These are the notions of the <b>C#</b> <b>programming language</b>
+                            that you will learn with this <b>programming course</b>.
+                        </p>
+
+                        <ul>
+                            <li>First contact with <b>C#.</b> Operations, Averages, Formats...</li>
+                            <li>Flow control. If..Then, Do while, For next...</li>
+                            <li>Basic data types.</li>
+                            <li>Arrays, structures, and strings.</li>
+                            <li>Functions.</li>
+                            <li>Object-oriented programming.</li>
+                            <li>Classes.</li>
+                            <li>File management.</li>
+                            <li>Object persistence.</li>
+                            <li>Relational databases.</li>
+                            <li>Dynamic memory management.</li>
+                            <li>Some additional libraries.</li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <!--Ventajas-->
+                    <div class="p-3">
+                        <h2 class="h2" title="What advantages will I get by taking the C# programming course?">🏆 What
+                            advantages will I get by taking the <b>C#</b> <b>Programming Course?</b></h2>
+
+                        <p>
+                            The advantages that you will obtain by taking this <b>programming course</b> are:
+                        </p>
+
+                        <ul>
+                            <li>You will gain <b>higher knowledge</b> of <b>C#.</b></li>
+                            <li>He will become a <b>professional in high demand</b> by companies.</li>
+                            <li>It's <b>free</b></li>
+                            <li>It is <b>No login</b></li>
+                            <li>It is <b>Online</b></li>
+                            <li>Learn <b>at your own pace</b></li>
+                            <li>Access <b>wherever you want</b></li>
+                            <li>Access <b>whenever you want</b></li>
+                            <li>Access <b>as you like</b></li>
+                            <li><b>Non Stop</b> 24/7</li>
+                        </ul>
+                        <p>
+                            With the knowledge acquired by taking this <b>programming course,</b>
+                            you will become one of the professionals most in demand by companies. According to
+                            <a href="https://www.glassdoor.es/" target="_blank" rel="nofollow">Glassdoor</a>,
+                            a <b>C#</b> programmer earns an average of <b>€32,073</b> per year in Spain.
+                            In the United States, the figure shoots up to <b>$88,000</b> per year.
+                        </p>
+                    </div>
+                    <hr />
+                    <!--Quieres aprender-->
+                    <div class="p-3">
+                        <h2 class="h2" title="Do you want to learn to program in C#? Start now!">🤔 Do you want to
+                            <b>learn to program</b> in <b>C#?</b> <b>Start now!</b></h2>
+
+                        <p>
+                            In this <b>programming course </b><b>C#</b> you have everything you need to
+                            learn <b>programming</b> <b>C#</b> in an easy and fast way, and what is best... <b>at your
+                                own pace!</b> Oh!
+                            and remember, <b>wherever you want, when you want, however you want.</b>
+                        </p>
+                        <h4 class="h4">1.- <b>What do you need!</b></h4>
+
+                        <ul>
+                            <li><a href="https://visualstudio.microsoft.com/es/vs/" target="_blank"
+                                    rel="nofollow">Visual Studio 2022 - Community Edition</a></li>
+                        </ul>
+                        <p>
+                            You will need the <a href="https://visualstudio.microsoft.com/es/vs/" target="_blank"
+                                rel="nofollow">Microsoft Visual Studio 2022 - Community Edition.</a>
+                            <a href="https://visualstudio.microsoft.com/es/vs/" target="_blank" rel="nofollow">IDE</a>.
+                            Why this edition? Of course you can install any edition you want, it's just that this
+                            edition is <b>FREE!</b> 😊
+                        </p>
+                        <h4 class="h4">2.- Lessons in <b>C#</b> <b>programming </b></h4>
+
+                        <p>
+                            Below are all the lessons in this <b>programming course</b> <b>C#.</b>
+                            Along with the number of exercises per lesson. Click on any of them.
+                        </p>
+                        <div class="card p-3">
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-1-first-contact-with-c-sharp.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 1 - First contact with C# Sharp - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;14
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;First contact with C# Sharp
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-2-flow-control.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 2 - Flow Control - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;34
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Flow Control
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-3-basic-data-types.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 3 - Basic Data Types - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;26
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Basic Data Types
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-4-arrays-structures-and-strings.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 4 - Arrays, Structures and Strings - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;25
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Arrays, Structures and Strings
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-5-functions.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 5 - Functions - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;37
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Functions
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-6-oop-object-oriented-programming.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 6 - OOP Object Oriented Programming - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;7
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;OOP Object Oriented Programming
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-7-oop-more-on-classes.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 7 - OOP More On Classes - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;13
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;OOP More On Classes
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-8-file-management.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 8 - File Management - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;41
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;File Management
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-9-object-persistence.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 9 - Object Persistence - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;4
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Object Persistence
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-10-access-to-relational-databases.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 10 - Access To Relational Databases - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;3
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Access To Relational Databases
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-11-dynamic-memory-management.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 11 - Dynamic Memory Management - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;13
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Dynamic Memory Management
+                                     </a>
+                                  </h5>
+                            </div>
+                            <div class="list-group text-left">
+                                <h5 style="font-weight:400;">
+                                    <a style="font-weight:bold; color:#007bff;" class="list-group-item list-group-item-action"
+                                    href="lesson-12-additional-libraries.html"
+                                    data-toggle="tooltip" data-placement="left" title="Lesson 12 - Additional Libraries - C# Programming Course">
+                                        <span class="badge bg-orange float-right" title="Total Exercises" data-toggle="tooltip">
+                                            <i class="fa fa-code"></i>&nbsp;10
+                                        </span>
+                                        <i class="fa fa-plus"></i>&nbsp;Additional Libraries
+                                     </a>
+                                  </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Otros lenguajes de programación-->
+                    <div class="p-3">
+                        <h2>Learn in other <b>programming languages</b></h2>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <a href="https://en.juanantonioripoll.es/java-programming-course/" target="_blank"
+                                    style="cursor: pointer;" title="Java Programming Course">
+                                    <div class="bg-dark text-center rounded" style="padding: 10px 10px 10px 10px;">
+                                        <h3 class="h3 text-orange" title="Java Programming Course"><b>Java</b>
+                                            Programming Course</h3>
+                                        <p>You can also learn <b>Java</b> with the <b>programming course</b></p>
+                                        <h4 class="h4"><b>100% FREE</b></h4>
+                                        <p><b>Programming course in</b> <b>Java</b></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="https://en.juanantonioripoll.es/visual-basic-programming-course/"
+                                    target="_blank" style="cursor: pointer;"
+                                    title="Visual Basic (VB.Net) Programming Course">
+                                    <div class="bg-dark text-center rounded" style="padding: 10px 10px 10px 10px;">
+                                        <h3 class="h3 text-orange" title="Visual Basic (VB.Net) Programming Course">
+                                            <b>Visual Basic</b> Programming Course</h3>
+                                        <p>You can also learn <b>Visual Basic</b> with the <b>programming course</b></p>
+                                        <h4 class="h4"><b>100% FREE</b></h4>
+                                        <p><b>Programming course in</b> <b>Visual Basic</b></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="main-footer light-mode">
+            <div class="row">
+                <div class="col-12 form-inline ">
+                    <label style="font-weight: 400;">
+                        Juan A. Ripoll - Full Stack Developer - Software & Systems. &copy; 2023 All rights reserved.
+                        Since 1998.
+                        <a href="https://en.juanantonioripoll.es/legal.aspx" title="Legal Conditions" class="text-orange">&nbsp;Legal
+                            Conditions.</a></label>
+                </div>
+            </div>
+        </footer>
+        <div class="control-sidebar-bg">
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://www.juanantonioripoll.es/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://www.juanantonioripoll.es/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://www.juanantonioripoll.es/dist/js/adminlte.js"></script>  
+    
+</body>
+
+</html>
