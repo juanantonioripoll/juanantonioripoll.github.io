@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://juanantonioripoll.github.io/web.sitemap.xml
