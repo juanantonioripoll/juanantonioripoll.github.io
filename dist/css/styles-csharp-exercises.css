@@ -172,7 +172,7 @@ body {
         background: var(--light);
         color: var(--dark);
         width: 100%;
-        z-index: 10000000;
+        z-index: 1000;
     }
 
         /* content fixedtop navbar*/
