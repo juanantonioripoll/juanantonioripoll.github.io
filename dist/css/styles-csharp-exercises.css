@@ -186,7 +186,7 @@ body {
             top: 0;
             left: 0;
             width: calc(100% - 270px);
-            z-index: 500;
+            z-index: 1000;
         }
 
             .content .fixedtop nav a {
